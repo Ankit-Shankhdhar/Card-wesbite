@@ -89,12 +89,15 @@ const About = () => {
         <p className="mb-6 text-gray-700 max-w-2xl mx-auto">
           Join hundreds of organizations using DigitalID for their identification needs.
         </p>
+        <Link to="/create" >
         <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
           Get Started Today
         </button>
+          </Link>
       </section>
     </div>
   );
 };
+
 
 export default About;
