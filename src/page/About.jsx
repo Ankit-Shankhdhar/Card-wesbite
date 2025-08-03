@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Background from '../assets/Background.jpg'
 const About = () => {
   return (
@@ -101,3 +102,4 @@ const About = () => {
 
 
 export default About;
+
