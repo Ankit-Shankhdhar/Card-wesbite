@@ -7,17 +7,19 @@ import About from './page/About.jsx';
 
 function App() {
   return (
-    <div className='relative'>
-      <div className='sticky top-0 z-5'>
+    <div className="flex flex-col min-h-screen">
+      <div className="sticky top-0 z-50">
         <Navbar />
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/create" element={<CreateProfile />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+
+      <div className="flex-1 relative z-10">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/create" element={<CreateProfile />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
     </div>
-    
   );
 }
 
