@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './page/Home.jsx';
 import Navbar from './components/Navbar.jsx';
 import CreateProfile from './components/CreateProfile.jsx';
+import About from './page/About.jsx';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create" element={<CreateProfile />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
     
